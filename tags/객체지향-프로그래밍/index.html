@@ -1,0 +1,228 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"><meta name="robots" content="noindex"><meta><title>태그: 객체지향 프로그래밍 - LMH의 블로그</title><link rel="manifest" href="/manifest.json"><meta name="application-name" content="LMH의 블로그"><meta name="msapplication-TileImage" content="/img/favicon.svg"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="LMH의 블로그"><meta name="apple-mobile-web-app-status-bar-style" content="default"><meta name="description" content="LMH의 프로그래밍 정리노트"><meta property="og:type" content="blog"><meta property="og:title" content="LMH의 블로그"><meta property="og:url" content="https://moner050.github.io/"><meta property="og:site_name" content="LMH의 블로그"><meta property="og:description" content="LMH의 프로그래밍 정리노트"><meta property="og:locale" content="ko_KR"><meta property="og:image" content="https://moner050.github.io/img/og_image.png"><meta property="article:author" content="Lee Min Hyeong"><meta property="twitter:card" content="summary"><meta property="twitter:image" content="/img/og_image.png"><script type="application/ld+json">{"@context":"https://schema.org","@type":"BlogPosting","mainEntityOfPage":{"@type":"WebPage","@id":"https://moner050.github.io"},"headline":"LMH의 블로그","image":["https://moner050.github.io/img/og_image.png"],"author":{"@type":"Person","name":"Lee Min Hyeong"},"publisher":{"@type":"Organization","name":"LMH의 블로그","logo":{"@type":"ImageObject","url":"https://moner050.github.io/img/logo.svg"}},"description":"LMH의 프로그래밍 정리노트"}</script><link rel="icon" href="/img/favicon.svg"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.12.0/styles/atom-one-light.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;600&amp;family=Source+Code+Pro"><link rel="stylesheet" href="/css/default.css"><style>body>.footer,body>.navbar,body>.section{opacity:0}</style><!--!--><!--!--><!--!--><!--!--><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/css/lightgallery.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.min.css"><!--!--><!--!--><style>.pace{-webkit-pointer-events:none;pointer-events:none;-webkit-user-select:none;-moz-user-select:none;user-select:none}.pace-inactive{display:none}.pace .pace-progress{background:#3273dc;position:fixed;z-index:2000;top:0;right:100%;width:100%;height:2px}</style><script src="https://cdn.jsdelivr.net/npm/pace-js@1.2.4/pace.min.js"></script><!--!--><!--!--><!-- hexo injector head_end start --><script>
+  (function () {
+      function switchTab() {
+          if (!location.hash) {
+            return;
+          }
+          Array
+              .from(document.querySelectorAll('.tab-content'))
+              .forEach($tab => {
+                  $tab.classList.add('is-hidden');
+              });
+          Array
+              .from(document.querySelectorAll('.tabs li'))
+              .forEach($tab => {
+                  $tab.classList.remove('is-active');
+              });
+          const $activeTab = document.querySelector(location.hash);
+          if ($activeTab) {
+              $activeTab.classList.remove('is-hidden');
+          }
+          const $tabMenu = document.querySelector(`a[href="${location.hash}"]`);
+          if ($tabMenu) {
+              $tabMenu.parentElement.classList.add('is-active');
+          }
+      }
+      switchTab();
+      window.addEventListener('hashchange', switchTab, false);
+  })();
+  </script><!-- hexo injector head_end end --><meta name="generator" content="Hexo 6.1.0"></head><body class="is-2-column"><nav class="navbar navbar-main"><div class="container navbar-container"><div class="navbar-brand justify-content-center"><a class="navbar-item navbar-logo" href="/"><img src="/img/logo.svg" alt="LMH의 블로그" height="28"></a></div><div class="navbar-menu"><div class="navbar-start"><a class="navbar-item" href="/">홈</a><a class="navbar-item" href="/archives">아카이브</a><a class="navbar-item" href="/categories">카테고리</a><a class="navbar-item" href="/tags">태그</a></div><div class="navbar-end"><a class="navbar-item" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a><a class="navbar-item search" title="검색" href="javascript:;"><i class="fas fa-search"></i></a></div></div></div></nav><section class="section"><div class="container"><div class="columns"><div class="column order-2 column-main is-8-tablet is-8-desktop is-8-widescreen"><div class="card"><div class="card-content"><nav class="breadcrumb" aria-label="breadcrumbs"><ul><li><a href="/tags">태그</a></li><li class="is-active"><a href="#" aria-current="page">객체지향 프로그래밍</a></li></ul></nav></div></div><div class="card"><article class="card-content article" role="article"><div class="article-meta is-size-7 is-uppercase level is-mobile"><div class="level-left"><span class="level-item"><time dateTime="2022-04-05T07:30:22.000Z" title="2022. 4. 5. 오후 4:30:22">2022-04-05</time>&nbsp;게시 됨</span><span class="level-item"><time dateTime="2022-04-05T07:34:22.448Z" title="2022. 4. 5. 오후 4:34:22">2022-04-05</time>&nbsp;업데이트 됨</span><span class="level-item"><a class="link-muted" href="/categories/Programming/">Programming</a><span> / </span><a class="link-muted" href="/categories/Programming/Java/">Java</a><span> / </span><a class="link-muted" href="/categories/Programming/Java/Java-%EB%9E%80/">Java 란</a></span><span class="level-item">10분안에 읽기 (약 1430 단어)</span></div></div><h1 class="title is-3 is-size-4-mobile"><a class="link-muted" href="/2022/04/05/Java%EB%9E%80/">Java</a></h1><div class="content"><h1 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h1><ul>
+<li><h2 id="Java의-역사"><a href="#Java의-역사" class="headerlink" title="Java의 역사"></a>Java의 역사</h2><ul>
+<li><h3 id="Java는-C와-C-은-포인터로-메모리를-직접-핸들링을-해서-시스템이-다운될-확률이-높아-더-안정적인-언어가-없을까-해서-썬-마이크로시스템즈의-제임스-고슬링과-다른-연구원들이-개발한-객체-지향적-프로그래밍-언어이다-1991년-그린프로젝트라는-이름으로-시작해서-1995년에-정식-발표했다-Java의-초기-이름은-오크-Oak-or-그린-Green-최초의-Java는-C-를-약간-변형한-형태로-가전제품에-내장된-프로그램을-위한-언어로-만들어-졌지만-현재의-자바는-웹앱과-모바일-프로그램-개발까지-폭넓게-사용되고-있다"><a href="#Java는-C와-C-은-포인터로-메모리를-직접-핸들링을-해서-시스템이-다운될-확률이-높아-더-안정적인-언어가-없을까-해서-썬-마이크로시스템즈의-제임스-고슬링과-다른-연구원들이-개발한-객체-지향적-프로그래밍-언어이다-1991년-그린프로젝트라는-이름으로-시작해서-1995년에-정식-발표했다-Java의-초기-이름은-오크-Oak-or-그린-Green-최초의-Java는-C-를-약간-변형한-형태로-가전제품에-내장된-프로그램을-위한-언어로-만들어-졌지만-현재의-자바는-웹앱과-모바일-프로그램-개발까지-폭넓게-사용되고-있다" class="headerlink" title="Java는 C와 C++은 포인터로 메모리를 직접 핸들링을 해서 시스템이 다운될 확률이 높아 더 안정적인 언어가 없을까 해서 썬 마이크로시스템즈의 제임스 고슬링과 다른 연구원들이 개발한 객체 지향적 프로그래밍 언어이다.  1991년 그린프로젝트라는 이름으로 시작해서 1995년에 정식 발표했다. (Java의 초기 이름은 오크(Oak) or 그린(Green))  최초의 Java는 C++를 약간 변형한 형태로 가전제품에 내장된 프로그램을 위한 언어로 만들어 졌지만 현재의 자바는 웹앱과 모바일 프로그램 개발까지 폭넓게 사용되고 있다."></a>Java는 C와 C++은 포인터로 메모리를 직접 핸들링을 해서 시스템이 다운될 확률이 높아 더 안정적인 언어가 없을까 해서 썬 마이크로시스템즈의 <strong>제임스 고슬링</strong>과 다른 연구원들이 개발한 <strong>객체 지향적</strong> 프로그래밍 언어이다. <br> 1991년 그린프로젝트라는 이름으로 시작해서 1995년에 정식 발표했다. (Java의 초기 이름은 오크(Oak) or 그린(Green)) <br> 최초의 Java는 C++를 약간 변형한 형태로 가전제품에 내장된 프로그램을 위한 언어로 만들어 졌지만 현재의 자바는 웹앱과 모바일 프로그램 개발까지 폭넓게 사용되고 있다.</h3></li>
+</ul>
+</li>
+</ul>
+<hr>
+<br>
+
+<ul>
+<li><h2 id="Java의-특징"><a href="#Java의-특징" class="headerlink" title="Java의 특징"></a>Java의 특징</h2><ul>
+<li><h3 id="WORA-Write-Once-Run-Anywhere-가-가능해-플랫폼에-영향을-받지-않으므로-다양한-환경에서-사용가능하다"><a href="#WORA-Write-Once-Run-Anywhere-가-가능해-플랫폼에-영향을-받지-않으므로-다양한-환경에서-사용가능하다" class="headerlink" title="WORA(Write Once Run Anywhere)가 가능해 플랫폼에 영향을 받지 않으므로 다양한 환경에서 사용가능하다."></a>WORA(Write Once Run Anywhere)가 가능해 플랫폼에 영향을 받지 않으므로 다양한 환경에서 사용가능하다.</h3></li>
+<li><h3 id="객체지향-언어이기-때문에-유지보수가-쉽고-확장성이-좋다"><a href="#객체지향-언어이기-때문에-유지보수가-쉽고-확장성이-좋다" class="headerlink" title="객체지향 언어이기 때문에 유지보수가 쉽고 확장성이 좋다"></a>객체지향 언어이기 때문에 유지보수가 쉽고 확장성이 좋다</h3></li>
+<li><h3 id="프로그램이-안정적이다"><a href="#프로그램이-안정적이다" class="headerlink" title="프로그램이 안정적이다"></a>프로그램이 안정적이다</h3></li>
+<li><h3 id="풍부한-기능이-제공되는-오픈-소스이다"><a href="#풍부한-기능이-제공되는-오픈-소스이다" class="headerlink" title="풍부한 기능이 제공되는 오픈 소스이다."></a>풍부한 기능이 제공되는 오픈 소스이다.</h3></li>
+</ul>
+  <br>
+
+<p>  <img src="/../img/Java_work.png" alt="java동작"></p>
+<ul>
+<li><h3 id="소스-프로그래밍-언어로-작성된-텍스트-파일"><a href="#소스-프로그래밍-언어로-작성된-텍스트-파일" class="headerlink" title="소스: 프로그래밍 언어로 작성된 텍스트 파일"></a>소스: 프로그래밍 언어로 작성된 텍스트 파일</h3></li>
+<li><h3 id="컴파일-소스-파일을-컴퓨터가-이해할-수-있는-기계어로-만드는-과정"><a href="#컴파일-소스-파일을-컴퓨터가-이해할-수-있는-기계어로-만드는-과정" class="headerlink" title="컴파일: 소스 파일을 컴퓨터가 이해할 수 있는 기계어로 만드는 과정"></a>컴파일: 소스 파일을 컴퓨터가 이해할 수 있는 기계어로 만드는 과정</h3></li>
+<li><h3 id="바이트파일-자바-가상-기계-JVM-에서-실행-가능한-바이너리-코드-파일"><a href="#바이트파일-자바-가상-기계-JVM-에서-실행-가능한-바이너리-코드-파일" class="headerlink" title="바이트파일: 자바 가상 기계(JVM)에서 실행 가능한 바이너리 코드 파일"></a>바이트파일: 자바 가상 기계(JVM)에서 실행 가능한 바이너리 코드 파일</h3></li>
+<li><h3 id="JVM-Java-Virtual-Machine-각기-다른-플랫폼에서-동일한-자바-실행-환경-제공-JVM-자체는-플랫폼에-종속적이다"><a href="#JVM-Java-Virtual-Machine-각기-다른-플랫폼에서-동일한-자바-실행-환경-제공-JVM-자체는-플랫폼에-종속적이다" class="headerlink" title="JVM(Java Virtual Machine): 각기 다른 플랫폼에서 동일한 자바 실행 환경 제공.  JVM 자체는 플랫폼에 종속적이다."></a>JVM(Java Virtual Machine): 각기 다른 플랫폼에서 동일한 자바 실행 환경 제공. <br> JVM 자체는 플랫폼에 종속적이다.</h3></li>
+</ul>
+</li>
+</ul>
+<hr>
+<br>
+
+<h2 id="객체와-클래스"><a href="#객체와-클래스" class="headerlink" title="객체와 클래스"></a>객체와 클래스</h2><ul>
+<li><h2 id="객체란"><a href="#객체란" class="headerlink" title="객체란?"></a>객체란?</h2><ul>
+<li><h3 id="클래스의-모양-그대로-찍어낸-실체"><a href="#클래스의-모양-그대로-찍어낸-실체" class="headerlink" title="클래스의 모양 그대로 찍어낸 실체"></a>클래스의 모양 그대로 찍어낸 실체</h3></li>
+<li><h3 id="프로그램-실행중에-생성되는-실체"><a href="#프로그램-실행중에-생성되는-실체" class="headerlink" title="프로그램 실행중에 생성되는 실체"></a>프로그램 실행중에 생성되는 실체</h3></li>
+<li><h3 id="메모리-공간을-갖는-구체적인-실체"><a href="#메모리-공간을-갖는-구체적인-실체" class="headerlink" title="메모리 공간을 갖는 구체적인 실체"></a>메모리 공간을 갖는 구체적인 실체</h3></li>
+<li><h3 id="인스턴스-instance-라고도-부른다"><a href="#인스턴스-instance-라고도-부른다" class="headerlink" title="인스턴스(instance)라고도 부른다."></a>인스턴스(instance)라고도 부른다.</h3></li>
+</ul>
+</li>
+<li><h2 id="클래스란"><a href="#클래스란" class="headerlink" title="클래스란?"></a>클래스란?</h2><ul>
+<li><h3 id="객체를-만들어내기-위한-설계도-혹은-틀"><a href="#객체를-만들어내기-위한-설계도-혹은-틀" class="headerlink" title="객체를 만들어내기 위한 설계도 혹은 틀"></a>객체를 만들어내기 위한 설계도 혹은 틀</h3></li>
+<li><h3 id="객체의-속성-state-과-행동-behavior-포함"><a href="#객체의-속성-state-과-행동-behavior-포함" class="headerlink" title="객체의 속성(state)과 행동(behavior) 포함."></a>객체의 속성(state)과 행동(behavior) 포함.</h3>  예)<table>
+<thead>
+<tr>
+<th>클래스</th>
+<th>객체</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>사람</td>
+<td>나, 너, 이웃집아저씨</td>
+</tr>
+<tr>
+<td>붕어빵틀</td>
+<td>구워진 붕어빵 여러개</td>
+</tr>
+<tr>
+<td>소나타 자동차</td>
+<td>출고된 실제 소나타 20대</td>
+</tr>
+</tbody></table>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<br>
+
+<ul>
+<li><h2 id="객체지향-프로그래밍-OOP-이란"><a href="#객체지향-프로그래밍-OOP-이란" class="headerlink" title="객체지향 프로그래밍(OOP)이란?"></a>객체지향 프로그래밍(OOP)이란?</h2><ul>
+<li><h3 id="프로그램의-구현을-시간의-흐름순이-아닌-객체간의-관계와-협력을-기반으로-프로그래밍-하는것이다"><a href="#프로그램의-구현을-시간의-흐름순이-아닌-객체간의-관계와-협력을-기반으로-프로그래밍-하는것이다" class="headerlink" title="프로그램의 구현을 시간의 흐름순이 아닌  객체간의 관계와 협력을 기반으로 프로그래밍 하는것이다."></a>프로그램의 구현을 시간의 흐름순이 아닌 <br> 객체간의 관계와 협력을 기반으로 프로그래밍 하는것이다.</h3></li>
+<li><h3 id="객체지향-프로그래밍의-장점"><a href="#객체지향-프로그래밍의-장점" class="headerlink" title="객체지향 프로그래밍의 장점"></a>객체지향 프로그래밍의 장점</h3><ol>
+<li><h4 id="소프트웨어의-생산성-향상"><a href="#소프트웨어의-생산성-향상" class="headerlink" title="소프트웨어의 생산성 향상"></a>소프트웨어의 생산성 향상</h4><ul>
+<li>컴퓨터 산업의 발전에 따라 소프트웨어의 생명 주기(Life Cycle)단축<ul>
+<li>소프트웨어를 빠른 속도로 생산할 필요성 증대</li>
+</ul>
+</li>
+<li>객체지향 언어<ul>
+<li>캡슐화, 상속, 다형성, 객체 등 소프트웨어 재사용을 위한 여러 장치가 내장되있음.</li>
+<li>소프트웨어 재사용과 부분 수정이 빠름</li>
+<li>소프트웨어를 다시 만드는 부담 줄어들음</li>
+<li>소프트웨어 생산성 향상.</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="실세계에-대한-쉬운-모델링"><a href="#실세계에-대한-쉬운-모델링" class="headerlink" title="실세계에 대한 쉬운 모델링"></a>실세계에 대한 쉬운 모델링</h4><ul>
+<li>컴퓨터 산업 초기때는 수학계산&#x2F;통계 처리를 하는 등의 처리과정, 계산 절차가 중요했지만<br>현대에는 절차나 과정보다 물체(객체)들의 상호작용으로 묘사하는 것이 용이해졌기 때문</li>
+</ul>
+</li>
+<li><h4 id="보안성-향상"><a href="#보안성-향상" class="headerlink" title="보안성 향상"></a>보안성 향상</h4><ul>
+<li>객체지향의 캡슐화 특징으로 실제 구현되는 부분을 외부에서 볼 수 없으므로 정보 은닉 가능.</li>
+</ul>
+</li>
+</ol>
+</li>
+<li><h3 id="객체지향-프로그래밍의-단점"><a href="#객체지향-프로그래밍의-단점" class="headerlink" title="객체지향 프로그래밍의 단점"></a>객체지향 프로그래밍의 단점</h3><ol>
+<li><h4 id="느린-개발속도"><a href="#느린-개발속도" class="headerlink" title="느린 개발속도"></a>느린 개발속도</h4><ul>
+<li>모든 객체의 역활과 기능을 이해해야 하기 때문에 프로그래밍에 많은 시간이 소모된다.</li>
+</ul>
+</li>
+<li><h4 id="느린-실행속도"><a href="#느린-실행속도" class="headerlink" title="느린 실행속도"></a>느린 실행속도</h4><ul>
+<li>절차지향 프로그래밍에 비해 느린 실행속도</li>
+<li>메모리와 연산에 대한 비용이 증가한다.</li>
+</ul>
+</li>
+<li><h4 id="높은-난이도"><a href="#높은-난이도" class="headerlink" title="높은 난이도"></a>높은 난이도</h4><ul>
+<li>절차지향 프로그래밍에 비해 난이도가 높다.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<hr>
+<br>
+
+<ul>
+<li><h2 id="객체지향-언어-Object-oriented-Language"><a href="#객체지향-언어-Object-oriented-Language" class="headerlink" title="객체지향 언어(Object-oriented Language)"></a>객체지향 언어(Object-oriented Language)</h2><ul>
+<li><h3 id="객체지향-언어란-프로그램을-다수의-객체로-만들고-이-객체끼리-서로-상호작용-하도록-만드는-프로그래밍-언어이다-여기서-객체란-현실로-따지면-TV-책-냉장고-컴퓨터-카메라-등이-모두-객체인-것이다-객체는-객체마다-고유한-특성과-행동을-가진다"><a href="#객체지향-언어란-프로그램을-다수의-객체로-만들고-이-객체끼리-서로-상호작용-하도록-만드는-프로그래밍-언어이다-여기서-객체란-현실로-따지면-TV-책-냉장고-컴퓨터-카메라-등이-모두-객체인-것이다-객체는-객체마다-고유한-특성과-행동을-가진다" class="headerlink" title="객체지향 언어란 프로그램을 다수의 객체로 만들고, 이 객체끼리 서로 상호작용 하도록 만드는 프로그래밍 언어이다.  여기서 객체란, 현실로 따지면 TV, 책, 냉장고, 컴퓨터, 카메라 등이 모두 객체인 것이다.  객체는 객체마다 고유한 특성과 행동을 가진다."></a>객체지향 언어란 프로그램을 다수의 객체로 만들고, 이 객체끼리 서로 상호작용 하도록 만드는 프로그래밍 언어이다. <br> 여기서 객체란, 현실로 따지면 TV, 책, 냉장고, 컴퓨터, 카메라 등이 모두 객체인 것이다. <br> 객체는 객체마다 고유한 특성과 행동을 가진다.</h3></li>
+<li><h3 id="객체지향-언어의-특징"><a href="#객체지향-언어의-특징" class="headerlink" title="객체지향 언어의 특징"></a>객체지향 언어의 특징</h3><ol>
+<li><h4 id="캡슐화-encapsulation"><a href="#캡슐화-encapsulation" class="headerlink" title="캡슐화 (encapsulation)"></a>캡슐화 (encapsulation)</h4><ul>
+<li>객체를 캡슐로 싸서 내부를 볼 수 없게 하는 것</li>
+<li>외부의 접근으로 부터 객체를 보호해 준다.</li>
+<li>데이터와 코드의 형태를 외부에서 알 수 없다.</li>
+</ul>
+</li>
+<li><h4 id="상속-inheritance"><a href="#상속-inheritance" class="headerlink" title="상속 (inheritance)"></a>상속 (inheritance)</h4><ul>
+<li>상위 객체의 속성이 하위 객체에 물려지는것</li>
+<li>하위 객체가 상위 객체의 속성을 모두 가지는 관계</li>
+<li>Java는 클래스의 다중 상속이 불가능하다.</li>
+<li>하지만 인터페이스 다중 상속은 가능하다.</li>
+</ul>
+</li>
+<li><h4 id="다형성-polymorphism"><a href="#다형성-polymorphism" class="headerlink" title="다형성 (polymorphism)"></a>다형성 (polymorphism)</h4><ul>
+<li>상속과 연관된 개념으로, 같은 이름의 메소드나 클래스가 객체에 따라 다르게 동작하도록 구현한 것</li>
+<li>다시말해, 하나의 객체가 다른 여러 객체로 재구성 되는 것이다.</li>
+<li>오버로딩(Overloading), 오버라이딩(Overriding)이 있다.<ul>
+<li>오버로딩(Overloading): 같은 이름인 함수를 여러개 정의한 후 매개변수를 다르게 하여 각자 다르게 동작하는 것</li>
+<li>오버라이딩(Overriding): 슈퍼클래스의 메소드를 서브 클래스마다 다르게 구현한 것</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><h4 id="추상화-abstraction"><a href="#추상화-abstraction" class="headerlink" title="추상화 (abstraction)"></a>추상화 (abstraction)</h4><ul>
+<li>객체들의 공통된 특징(기능, 속성)을 도출하는 것이다.</li>
+<li>클래스를 정의하는 것을 추상화라고 할 수 있다.</li>
+</ul>
+</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+</div></article></div></div><div class="column column-left is-4-tablet is-4-desktop is-4-widescreen  order-1"><div class="card widget" data-type="profile"><div class="card-content"><nav class="level"><div class="level-item has-text-centered flex-shrink-1"><div><figure class="image is-128x128 mx-auto mb-2"><img class="avatar" src="https://img1.daumcdn.net/thumb/R1280x0.fjpg/?fname=http://t1.daumcdn.net/brunch/service/user/7r5X/image/9djEiPBPMLu_IvCYyvRPwmZkM1g.jpg" alt="LMH"></figure><p class="title is-size-4 is-block" style="line-height:inherit;">LMH</p><p class="is-size-6 is-block">LMH의 공부 정리일지</p><p class="is-size-6 is-flex justify-content-center"><i class="fas fa-map-marker-alt mr-1"></i><span>Korea/Seoul</span></p></div></div></nav><nav class="level is-mobile"><div class="level-item has-text-centered is-marginless"><div><p class="heading">포스트</p><a href="/archives"><p class="title">2</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">카테고리</p><a href="/categories"><p class="title">5</p></a></div></div><div class="level-item has-text-centered is-marginless"><div><p class="heading">태그</p><a href="/tags"><p class="title">6</p></a></div></div></nav><div class="level"><a class="level-item button is-primary is-rounded" href="https://github.com/moner050" target="_blank" rel="noopener">팔로우</a></div><div class="level is-mobile is-multiline"><a class="level-item button is-transparent is-marginless" target="_blank" rel="noopener" title="Github" href="https://github.com/moner050"><i class="fab fa-github"></i></a></div></div></div><!--!--><div class="card widget" data-type="categories"><div class="card-content"><div class="menu"><h3 class="menu-label">카테고리</h3><ul class="menu-list"><li><a class="level is-mobile" href="/categories/Markdown/"><span class="level-start"><span class="level-item">Markdown</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/Markdown/Markdown-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC/"><span class="level-start"><span class="level-item">Markdown 문법 정리</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li><li><a class="level is-mobile" href="/categories/Programming/"><span class="level-start"><span class="level-item">Programming</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Java/"><span class="level-start"><span class="level-item">Java</span></span><span class="level-end"><span class="level-item tag">1</span></span></a><ul><li><a class="level is-mobile" href="/categories/Programming/Java/Java-%EB%9E%80/"><span class="level-start"><span class="level-item">Java 란</span></span><span class="level-end"><span class="level-item tag">1</span></span></a></li></ul></li></ul></li></ul></div></div></div><div class="card widget" data-type="recent-posts"><div class="card-content"><h3 class="menu-label">최근 글</h3><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-04-05T07:30:22.000Z">2022-04-05</time></p><p class="title"><a href="/2022/04/05/Java%EB%9E%80/">Java</a></p><p class="categories"><a href="/categories/Programming/">Programming</a> / <a href="/categories/Programming/Java/">Java</a> / <a href="/categories/Programming/Java/Java-%EB%9E%80/">Java 란</a></p></div></article><article class="media"><div class="media-content"><p class="date"><time dateTime="2022-04-01T04:30:32.000Z">2022-04-01</time></p><p class="title"><a href="/2022/04/01/Markdown%EC%A0%95%EB%A6%AC/">Markdown 문법 정리</a></p><p class="categories"><a href="/categories/Markdown/">Markdown</a> / <a href="/categories/Markdown/Markdown-%EB%AC%B8%EB%B2%95-%EC%A0%95%EB%A6%AC/">Markdown 문법 정리</a></p></div></article></div></div><div class="card widget" data-type="archives"><div class="card-content"><div class="menu"><h3 class="menu-label">아카이브</h3><ul class="menu-list"><li><a class="level is-mobile" href="/archives/2022/04/"><span class="level-start"><span class="level-item">4월 2022</span></span><span class="level-end"><span class="level-item tag">2</span></span></a></li></ul></div></div></div><div class="card widget" data-type="tags"><div class="card-content"><div class="menu"><h3 class="menu-label">태그</h3><div class="field is-grouped is-grouped-multiline"><div class="control"><a class="tags has-addons" href="/tags/Java%EC%9D%98-%EC%97%AD%EC%82%AC/"><span class="tag">Java의 역사</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Java%EC%9D%98-%ED%8A%B9%EC%A7%95/"><span class="tag">Java의 특징</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/Markdown/"><span class="tag">Markdown</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B0%9D%EC%B2%B4%EC%99%80-%ED%81%B4%EB%9E%98%EC%8A%A4/"><span class="tag">객체와 클래스</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%EC%96%B8%EC%96%B4/"><span class="tag">객체지향 언어</span><span class="tag">1</span></a></div><div class="control"><a class="tags has-addons" href="/tags/%EA%B0%9D%EC%B2%B4%EC%A7%80%ED%96%A5-%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%B0%8D/"><span class="tag">객체지향 프로그래밍</span><span class="tag">1</span></a></div></div></div></div></div></div><!--!--></div></div></section><footer class="footer"><div class="container"><div class="level"><div class="level-start"><a class="footer-logo is-block mb-2" href="/"><img src="/img/logo.svg" alt="LMH의 블로그" height="28"></a><p class="is-size-7"><span>&copy; 2022 Lee Min Hyeong</span>  Powered by <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a> &amp; <a href="https://github.com/ppoffice/hexo-theme-icarus" target="_blank" rel="noopener">Icarus</a></p></div><div class="level-end"><div class="field has-addons"><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Creative Commons" href="https://creativecommons.org/"><i class="fab fa-creative-commons"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Attribution 4.0 International" href="https://creativecommons.org/licenses/by/4.0/"><i class="fab fa-creative-commons-by"></i></a></p><p class="control"><a class="button is-transparent is-large" target="_blank" rel="noopener" title="Download on GitHub" href="https://github.com/ppoffice/hexo-theme-icarus"><i class="fab fa-github"></i></a></p></div></div></div></div></footer><script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script><script src="https://cdn.jsdelivr.net/npm/moment@2.22.2/min/moment-with-locales.min.js"></script><script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.4/dist/clipboard.min.js" defer></script><script>moment.locale("ko");</script><script>var IcarusThemeSettings = {
+            article: {
+                highlight: {
+                    clipboard: true,
+                    fold: 'unfolded'
+                }
+            }
+        };</script><script src="/js/column.js"></script><script src="/js/animation.js"></script><a id="back-to-top" title="맨 위로" href="javascript:;"><i class="fas fa-chevron-up"></i></a><script src="/js/back_to_top.js" defer></script><!--!--><!--!--><!--!--><script src="https://cdn.jsdelivr.net/npm/cookieconsent@3.1.1/build/cookieconsent.min.js" defer></script><script>window.addEventListener("load", () => {
+      window.cookieconsent.initialise({
+        type: "info",
+        theme: "edgeless",
+        static: false,
+        position: "bottom-left",
+        content: {
+          message: "이 웹 사이트는 귀하의 경험을 향상시키기 위해 Cookie를 사용합니다.",
+          dismiss: "무시",
+          allow: "허용",
+          deny: "거부",
+          link: "더 알아보기",
+          policy: "Cookie 정책",
+          href: "https://www.cookiesandyou.com/",
+        },
+        palette: {
+          popup: {
+            background: "#edeff5",
+            text: "#838391"
+          },
+          button: {
+            background: "#4b81e8"
+          },
+        },
+      });
+    });</script><script src="https://cdn.jsdelivr.net/npm/lightgallery@1.10.0/dist/js/lightgallery.min.js" defer></script><script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.min.js" defer></script><script>window.addEventListener("load", () => {
+            if (typeof $.fn.lightGallery === 'function') {
+                $('.article').lightGallery({ selector: '.gallery-item' });
+            }
+            if (typeof $.fn.justifiedGallery === 'function') {
+                if ($('.justified-gallery > p > .gallery-item').length) {
+                    $('.justified-gallery > p > .gallery-item').unwrap();
+                }
+                $('.justified-gallery').justifiedGallery();
+            }
+        });</script><!--!--><!--!--><!--!--><!--!--><!--!--><script src="/js/main.js" defer></script><div class="searchbox"><div class="searchbox-container"><div class="searchbox-header"><div class="searchbox-input-container"><input class="searchbox-input" type="text" placeholder="입력 하세요..."></div><a class="searchbox-close" href="javascript:;">×</a></div><div class="searchbox-body"></div></div></div><script src="/js/insight.js" defer></script><script>document.addEventListener('DOMContentLoaded', function () {
+            loadInsight({"contentUrl":"/content.json"}, {"hint":"입력 하세요...","untitled":"(제목 없음)","posts":"포스트","pages":"페이지","categories":"카테고리","tags":"태그"});
+        });</script></body></html>
